@@ -21,6 +21,38 @@ arr.forEach(btn =>{btn.addEventListener("click",(e)=>{
 		input.value = str;
 	}
 
+	else if(e.target.innerText == "+") {
+		if (str.includes("+")) {
+			str = str
+		}else{
+			str = str + e.target.innerText;
+		}
+	}
+
+	else if(e.target.innerText == "-") {
+		if (str.includes("-")) {
+			str = str
+		}else{
+			str = str + e.target.innerText;
+		}
+	}
+
+	else if(e.target.innerText == "/") {
+		if (str.includes("/")) {
+			str = str
+		}else{
+			str = str + e.target.innerText;
+		}
+	}
+
+	else if(e.target.innerText == "*") {
+		if (str.includes("*")) {
+			str = str
+		}else{
+			str = str + e.target.innerText;
+		}
+	}
+
 	else{
 		str = str + e.target.innerText;
 		input.value = str;
